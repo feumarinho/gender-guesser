@@ -1,7 +1,7 @@
 services:
   gender-guesser:
     build: .
-    image: echodicom/gender-guesser:local
+    image: feumarinho/gender-gesser:local
     env_file:
       - .env
     ports:

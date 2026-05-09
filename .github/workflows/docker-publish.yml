@@ -1,6 +1,5 @@
-# Publica echodicom/gender-guesser no Docker Hub (tags semver, ex.: v1.0.0).
-# Segredos: DOCKERHUB_USERNAME e DOCKERHUB_TOKEN — conta com permissão de push
-# na organização Docker Hub `echodicom`.
+# Publica feumarinho/gender-gesser no Docker Hub (tags semver, ex.: v1.0.0).
+# Segredos: DOCKERHUB_USERNAME e DOCKERHUB_TOKEN (conta Docker Hub com push no repo).
 name: Publish Docker image
 
 on:
@@ -30,7 +29,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: echodicom/gender-guesser
+          images: feumarinho/gender-gesser
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}

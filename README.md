@@ -48,14 +48,14 @@ O mapeamento `5060:5000` expõe apenas em localhost; em produção, publique sem
 
 ## Imagem no Docker Hub
 
-Existe uma imagem de referência **`echodicom/gender-guesser`** no [Docker Hub](https://hub.docker.com/r/echodicom/gender-guesser) para quem prefere não construir a partir deste repositório:
+Existe uma imagem de referência **`feumarinho/gender-gesser`** no [Docker Hub](https://hub.docker.com/r/feumarinho/gender-gesser) para quem prefere não construir a partir deste repositório:
 
 ```bash
-docker pull echodicom/gender-guesser:latest
+docker pull feumarinho/gender-gesser:latest
 docker run -d --name gender-guesser -p 5060:5000 \
   -e GENDER_GUESSER_API_KEY=sua-chave \
   -v gender-data:/app/data \
-  echodicom/gender-guesser:latest
+  feumarinho/gender-gesser:latest
 ```
 
 Defina `GENDER_GUESSER_API_KEY` (e outras variáveis, se precisar) como no [`.env.example`](.env.example). Os exemplos deste README que usam `docker compose exec gender-guesser …` funcionam da mesma com a imagem do Hub: use `docker exec gender-guesser …` (ou o nome do contentor que escolheu no `docker run`).
