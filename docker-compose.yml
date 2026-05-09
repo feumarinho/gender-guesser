@@ -1,0 +1,14 @@
+services:
+  gender-guesser:
+    build: .
+    image: echodicom/gender-guesser:local
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:5060:5000"
+    volumes:
+      - gender-guesser-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  gender-guesser-data:

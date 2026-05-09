@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Env / secrets
+.env
+.env.local
+*.pem
+
+# Dados locais (SQLite em runtime)
+*.db
+*.db-wal
+*.db-shm
+/app/data/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Seeds / checkpoints
+seed_checkpoint.json
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
