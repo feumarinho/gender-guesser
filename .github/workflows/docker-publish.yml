@@ -1,4 +1,4 @@
-# Publica feumarinho/gender-gesser no Docker Hub (tags semver, ex.: v1.0.0).
+# Publica feumarinho/gender-guesser no Docker Hub (tags semver, ex.: v1.0.0).
 # Manifest multi-arquitetura: linux/amd64 + linux/arm64 (Apple Silicon, ARM em cloud).
 # Segredos: DOCKERHUB_USERNAME e DOCKERHUB_TOKEN (conta Docker Hub com push no repo).
 name: Publish Docker image
@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: feumarinho/gender-gesser
+          images: feumarinho/gender-guesser
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
