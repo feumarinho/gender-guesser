@@ -48,7 +48,7 @@ O mapeamento `5060:5000` expõe apenas em localhost; em produção, publique sem
 
 ## Imagem no Docker Hub
 
-Existe uma imagem de referência **`feumarinho/gender-gesser`** no [Docker Hub](https://hub.docker.com/r/feumarinho/gender-gesser) para quem prefere não construir a partir deste repositório:
+Existe uma imagem de referência **`feumarinho/gender-gesser`** no [Docker Hub](https://hub.docker.com/r/feumarinho/gender-gesser) para quem prefere não construir a partir deste repositório. Os builds publicados pelo GitHub Actions são **multi-arquitetura** (`linux/amd64` e `linux/arm64`), por exemplo para servidores x86 e Mac Apple Silicon sem `platform:` no compose.
 
 ```bash
 docker pull feumarinho/gender-gesser:latest
